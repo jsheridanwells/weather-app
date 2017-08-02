@@ -1,0 +1,14 @@
+.card {
+	text-align: center;
+	/*border: 1px solid lightblue;*/
+	min-height: 400px;
+}
+
+h1 {
+	font-size: 5em;
+	font-weight: bold;
+}
+
+img {
+	width: 100%;
+}
