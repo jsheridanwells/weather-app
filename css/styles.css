@@ -12,3 +12,12 @@ h1 {
 img {
 	width: 100%;
 }
+
+@media (max-width: 991px) {
+	.card {
+		border: 1px solid #aaa;
+	}
+	img {
+		width: 50%;
+	}
+}
