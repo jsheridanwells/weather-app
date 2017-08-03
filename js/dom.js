@@ -12,7 +12,7 @@ var Weather = (function(obj){
 		          <div class="col-md-3 card">
 		            <h2>Thursday</h2>
 		            <img src="img/${data.weather[0].icon}.svg" alt="sunny">
-		            <h3>${data.main.temp} &deg;</h3>
+		            <h3>${(Weather.getTempToFahr(data.main.temp))} &deg;</h3>
 		            <h3>${data.weather[0].description}</h3>
 		          </div>
 		        </div>
