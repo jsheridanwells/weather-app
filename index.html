@@ -26,16 +26,16 @@
       <nav class="navbar navbar-default">
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Enter Your Zip Code">
+            <input type="text" id="zip-input" class="form-control" placeholder="Enter Your Zip Code">
           </div>
         </form>
         <ul class="nav navbar-nav navbar-left">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select a Forecast <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Today</a></li>
-              <li><a href="#">5-Day</a></li>
-              <li><a href="#">16-Day</a></li>
+              <li class="select" ><a id="today" href="#">Today</a></li>
+              <li class="select" ><a id="five-day" href="#">5-Day</a></li>
+              <li class="select" ><a id="sixteen-day"   href="#">16-Day</a></li>
             </ul>
           </li>
         </ul>
@@ -79,5 +79,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ajax.js"></script>
   </body>
 </html>
