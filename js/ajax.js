@@ -5,6 +5,9 @@ var Weather = (function(obj) {
 
 		xhr.addEventListener('load', function() {
 			console.log("xhr successful");
+			if (xhr.status === 404) {
+				alert('Please enter a valid US zip code');
+			}
 			_data = JSON.parse(xhr.responseText);
 			callback(_data);
 		})

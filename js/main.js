@@ -1,5 +1,4 @@
 var Weather= (function(){
-	let frame = document.getElementById('frame');
 	let zipInput = document.getElementById('zip-input');
 	let selectors = document.getElementsByClassName('select');
 	let weatherData = [];
