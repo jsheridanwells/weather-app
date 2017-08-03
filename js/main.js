@@ -21,7 +21,7 @@ var Weather= (function(){
 				return 'http://api.openweathermap.org/data/2.5/weather?zip=' + zip + ',us&APPID=' + api;
 			} else if (id === 'five-day') {
 				return 'http://api.openweathermap.org/data/2.5/forecast?zip=' + zip + ',us&APPID=' + api;
-			} else if (id === 'sixteen-day') {
+			} else if (id === 'seven-day') {
 				return 'http://api.openweathermap.org/data/2.5/forecast/daily?zip=' + zip + ',us&APPID=' + api;
 			}
 		},
