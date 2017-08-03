@@ -1,8 +1,6 @@
 var Weather = (function(obj){
 	let frame = document.getElementById('frame');
 	obj.printToDom = function(type, data) {  //writes data to DOM
-
-
 		if (type === 'today') {
 			frame.innerHTML = `
 				<div class="row">
@@ -10,7 +8,7 @@ var Weather = (function(obj){
 		        </div>
 		        <div class="row">
 		          <div class="col-md-3 card">
-		            <h2>${Weather.getDay()}</h2>
+		            <h2>${Weather.getDay(0)}</h2>
 		            <img src="img/${data.weather[0].icon}.svg" alt="sunny">
 		            <h3>${(Weather.getTempToFahr(data.main.temp))} &deg;</h3>
 		            <h3>${data.weather[0].description}</h3>
@@ -43,8 +41,6 @@ var Weather = (function(obj){
 				Sixteen Day Coming Soon...
 			`;
 		}
-
-
 	};
 	return obj;
 }(Weather || {}));

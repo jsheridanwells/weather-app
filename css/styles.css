@@ -1,3 +1,10 @@
+body {
+	background-color: #e6f7ff;
+}
+
+nav.navbar {
+	background-color: #ffffb3;
+}
 .card {
 	text-align: center;
 	/*border: 1px solid lightblue;*/
